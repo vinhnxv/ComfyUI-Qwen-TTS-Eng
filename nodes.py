@@ -1,4 +1,4 @@
-# ComfyUI-Qwen-TTS Node Implementation
+# ComfyUI-Qwen-TTS-Eng Node Implementation
 # Based on the open-source Qwen3-TTS project by Alibaba Qwen team
 
 import os
@@ -361,7 +361,7 @@ def load_qwen_model(model_type: str, model_choice: str, device: str, precision: 
         if torch.cuda.is_available():
             device = "cuda"
         elif torch.backends.mps.is_available():
-            device = "mps"  # 针对 Mac 的关键修复
+            device = "mps"  # Critical fix for Mac (Apple Silicon)
         else:
             device = "cpu"
     
@@ -567,7 +567,7 @@ class VoiceDesignNode:
                 "model_choice": (["0.6B", "1.7B"], {"default": "1.7B"}),
                 "device": (["auto", "cuda","mps", "cpu"], {"default": "auto"}),
                 "precision": (["bf16", "fp32"], {"default": "bf16"}),
-                "language": (DEMO_LANGUAGES, {"default": "Auto"}),
+                "language": (DEMO_LANGUAGES, {"default": "English"}),
             },
             "optional": {
                 "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff, "control_after_generate": True}),
@@ -656,7 +656,7 @@ class VoiceCloneNode:
                 "model_choice": (["0.6B", "1.7B"], {"default": "0.6B"}),
                 "device": (["auto", "cuda","mps", "cpu"], {"default": "auto"}),
                 "precision": (["bf16", "fp32"], {"default": "bf16"}),
-                "language": (DEMO_LANGUAGES, {"default": "Auto"}),
+                "language": (DEMO_LANGUAGES, {"default": "English"}),
             },
             "optional": {
                 "ref_audio": ("AUDIO", {"tooltip": "Reference audio (ComfyUI Audio)"}),
@@ -857,11 +857,15 @@ class CustomVoiceNode:
         return {
             "required": {
                 "text": ("STRING", {"multiline": True, "default": "Hello world", "placeholder": "Enter text to synthesize"}),
-                "speaker": (["Aiden", "Dylan", "Eric", "Ono_anna", "Ryan", "Serena", "Sohee", "Uncle_fu", "Vivian"], {"default": "Ryan"}),
+                # English-only preset speakers (UK/US). Removed: Dylan (Beijing Mandarin),
+                # Eric (Sichuan Mandarin), Uncle_fu (Shanghai Mandarin), Ono_anna (Japanese),
+                # Sohee (Korean) — those are Chinese-dialect or non-English voices.
+                # Aiden + Ryan = male; Serena + Vivian = female.
+                "speaker": (["Aiden", "Ryan", "Serena", "Vivian"], {"default": "Ryan"}),
                 "model_choice": (["0.6B", "1.7B"], {"default": "1.7B"}),
                 "device": (["auto", "cuda","mps", "cpu"], {"default": "auto"}),
                 "precision": (["bf16", "fp32"], {"default": "bf16"}),
-                "language": (DEMO_LANGUAGES, {"default": "Auto"}),
+                "language": (DEMO_LANGUAGES, {"default": "English"}),
             },
             "optional": {
                 "seed": ("INT", {"default": 0, "min": 0, "max": 0xffffffffffffffff, "control_after_generate": True}),
@@ -1059,7 +1063,7 @@ class DialogueInferenceNode:
                 "model_choice": (["0.6B", "1.7B"], {"default": "1.7B"}),
                 "device": (["auto", "cuda", "mps", "cpu"], {"default": "auto"}),
                 "precision": (["bf16", "fp32"], {"default": "bf16"}),
-                "language": (DEMO_LANGUAGES, {"default": "Auto"}),
+                "language": (DEMO_LANGUAGES, {"default": "English"}),
                 # RENAMED: pause_seconds -> pause_linebreak
                 # Linebreak Pause
                 "pause_linebreak": ("FLOAT", {"default": 0.5, "min": 0.0, "max": 5.0, "step": 0.1, "tooltip": "Silence duration between lines"}),

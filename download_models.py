@@ -25,7 +25,7 @@ SMALL_MODELS = {
 
 def get_comfy_models_path():
     """Attempt to find the ComfyUI/models directory relative to this script."""
-    # Assuming script is in ComfyUI/custom_nodes/ComfyUI-Qwen-TTS/
+    # Assuming script is in ComfyUI/custom_nodes/ComfyUI-Qwen-TTS-Eng/
     current_path = Path(__file__).parent.resolve()
     
     # Check standard ComfyUI structure: ../../models

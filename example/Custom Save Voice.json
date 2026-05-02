@@ -270,7 +270,7 @@
         }
       ],
       "properties": {
-        "cnr_id": "qwen3-tts-comfyui",
+        "cnr_id": "qwen3-tts-comfyui-eng",
         "ver": "c7db6c2eb0f269d358c53bb71688dc95de4f7d07",
         "Node name for S&R": "FB_Qwen3TTSVoiceClone"
       },
@@ -391,7 +391,7 @@
         }
       ],
       "properties": {
-        "cnr_id": "qwen3-tts-comfyui",
+        "cnr_id": "qwen3-tts-comfyui-eng",
         "ver": "befc9f7d71c0804c392fd8f34f40b307d3fdb0f8",
         "Node name for S&R": "FB_Qwen3TTSVoiceClonePrompt"
       },
@@ -772,7 +772,7 @@
         }
       ],
       "properties": {
-        "cnr_id": "qwen3-tts-comfyui",
+        "cnr_id": "qwen3-tts-comfyui-eng",
         "ver": "c7db6c2eb0f269d358c53bb71688dc95de4f7d07",
         "Node name for S&R": "FB_Qwen3TTSVoiceClone"
       },
@@ -845,7 +845,7 @@
       ],
       "outputs": [],
       "properties": {
-        "cnr_id": "qwen3-tts-comfyui",
+        "cnr_id": "qwen3-tts-comfyui-eng",
         "ver": "befc9f7d71c0804c392fd8f34f40b307d3fdb0f8",
         "Node name for S&R": "FB_Qwen3TTSSaveVoice"
       },
@@ -904,7 +904,7 @@
       ],
       "outputs": [],
       "properties": {
-        "cnr_id": "qwen3-tts-comfyui",
+        "cnr_id": "qwen3-tts-comfyui-eng",
         "ver": "befc9f7d71c0804c392fd8f34f40b307d3fdb0f8",
         "Node name for S&R": "FB_Qwen3TTSSaveVoice"
       },
@@ -1076,7 +1076,7 @@
         }
       ],
       "properties": {
-        "cnr_id": "qwen3-tts-comfyui",
+        "cnr_id": "qwen3-tts-comfyui-eng",
         "ver": "befc9f7d71c0804c392fd8f34f40b307d3fdb0f8",
         "Node name for S&R": "FB_Qwen3TTSVoiceDesign"
       },
@@ -1246,7 +1246,7 @@
         }
       ],
       "properties": {
-        "cnr_id": "qwen3-tts-comfyui",
+        "cnr_id": "qwen3-tts-comfyui-eng",
         "ver": "befc9f7d71c0804c392fd8f34f40b307d3fdb0f8",
         "Node name for S&R": "FB_Qwen3TTSVoiceClonePrompt"
       },
@@ -1313,7 +1313,7 @@
         }
       ],
       "properties": {
-        "cnr_id": "qwen3-tts-comfyui",
+        "cnr_id": "qwen3-tts-comfyui-eng",
         "ver": "befc9f7d71c0804c392fd8f34f40b307d3fdb0f8",
         "Node name for S&R": "FB_Qwen3TTSLoadSpeaker"
       },

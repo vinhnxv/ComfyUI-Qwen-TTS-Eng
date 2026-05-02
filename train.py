@@ -32,7 +32,7 @@ except ImportError as e:
     print(f"Training node missing dependencies: {e}")
     TTSDataset = None
 
-logger = logging.getLogger("ComfyUI-Qwen-TTS-Train")
+logger = logging.getLogger("ComfyUI-Qwen-TTS-Eng-Train")
 
 SUPPORTED_AUDIO_EXTENSIONS = (".wav", ".mp3", ".flac", ".ogg", ".m4a")
 

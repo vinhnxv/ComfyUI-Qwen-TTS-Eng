@@ -32,4 +32,4 @@
 If you encounter other problems, please:
 1. Check the ComfyUI console for detailed error messages
 2. Verify all dependencies are installed: `pip install -r requirements.txt`
-3. Report issues at: https://github.com/flybirdxx/ComfyUI-Qwen-TTS/issues
+3. Report issues at: https://github.com/vinhnxv/ComfyUI-Qwen-TTS-Eng/issues

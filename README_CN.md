@@ -1,4 +1,4 @@
-# ComfyUI-Qwen-TTS
+# ComfyUI-Qwen-TTS-Eng
 
 [English](README.md) | 中文版
 

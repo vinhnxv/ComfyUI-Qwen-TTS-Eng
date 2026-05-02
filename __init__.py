@@ -1,4 +1,4 @@
-# ComfyUI-Qwen-TTS Custom Nodes
+# ComfyUI-Qwen-TTS-Eng Custom Nodes
 # Based on the open-source Qwen3-TTS project by Alibaba Qwen team
 
 import os
@@ -52,4 +52,4 @@ NODE_DISPLAY_NAME_MAPPINGS = {
 # Version information
 __version__ = "1.0.7"
 
-print(f"✅ ComfyUI-Qwen-TTS v{__version__} loaded")
+print(f"✅ ComfyUI-Qwen-TTS-Eng v{__version__} loaded")

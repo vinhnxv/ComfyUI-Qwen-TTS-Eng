@@ -243,7 +243,7 @@
         }
       ],
       "properties": {
-        "cnr_id": "qwen3-tts-comfyui",
+        "cnr_id": "qwen3-tts-comfyui-eng",
         "ver": "c7db6c2eb0f269d358c53bb71688dc95de4f7d07",
         "Node name for S&R": "FB_Qwen3TTSVoiceDesign",
         "enableTabs": false,
@@ -461,7 +461,7 @@
         }
       ],
       "properties": {
-        "cnr_id": "qwen3-tts-comfyui",
+        "cnr_id": "qwen3-tts-comfyui-eng",
         "ver": "c7db6c2eb0f269d358c53bb71688dc95de4f7d07",
         "Node name for S&R": "FB_Qwen3TTSVoiceClone"
       },
@@ -655,7 +655,7 @@
         }
       ],
       "properties": {
-        "cnr_id": "qwen3-tts-comfyui",
+        "cnr_id": "qwen3-tts-comfyui-eng",
         "ver": "c7db6c2eb0f269d358c53bb71688dc95de4f7d07",
         "Node name for S&R": "FB_Qwen3TTSCustomVoice",
         "enableTabs": false,

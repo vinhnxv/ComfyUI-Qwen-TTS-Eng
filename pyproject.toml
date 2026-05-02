@@ -1,5 +1,5 @@
 [project]
-name = "qwen3-tts-comfyui"  # Unique identifier (immutable after creation)
+name = "qwen3-tts-comfyui-eng"  # Unique identifier (immutable after creation)
 description = "ComfyUI custom nodes for speech synthesis, voice cloning, and voice design based on Qwen3-TTS"
 version = "1.0.7"  # Semantic versioning
 requires-python = ">=3.9"
@@ -18,9 +18,9 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/flybirdxx/ComfyUI-Qwen-TTS"
+Repository = "https://github.com/vinhnxv/ComfyUI-Qwen-TTS-Eng"
 
 [tool.comfy]
-PublisherId = "flybirdxx"  # TODO: Fill in your Publisher ID from https://registry.comfy.org
+PublisherId = "vinhnxv"  # TODO: Fill in your Publisher ID from https://registry.comfy.org
 DisplayName = "Qwen3-TTS - Voice Synthesis & Cloning"
-Icon = "https://raw.githubusercontent.com/flybirdxx/ComfyUI-Qwen-TTS/main/example/qwen3-tts.png"
+Icon = "https://raw.githubusercontent.com/vinhnxv/ComfyUI-Qwen-TTS-Eng/main/example/qwen3-tts.png"

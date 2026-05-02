@@ -1,4 +1,4 @@
-# ComfyUI-Qwen-TTS
+# ComfyUI-Qwen-TTS-Eng
 
 English | [中文版](README_CN.md)
 
@@ -182,7 +182,7 @@ pip install torch torchaudio transformers librosa accelerate
 
 ### Model Directory Structure
 
-ComfyUI-Qwen-TTS automatically searches for models in the following priority:
+ComfyUI-Qwen-TTS-Eng automatically searches for models in the following priority:
 
 ```text
 ComfyUI/
